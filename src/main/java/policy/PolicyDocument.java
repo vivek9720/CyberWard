@@ -1,0 +1,1 @@
+package policy; import java.util.ArrayList;import java.util.Collections;import java.util.List; public final class PolicyDocument{private final List<FirewallRule>rules=new ArrayList<>();public void add(FirewallRule r){if(r!=null)rules.add(r);}public List<FirewallRule> rules(){return Collections.unmodifiableList(rules);}public int size(){return rules.size();}}

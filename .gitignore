@@ -1,0 +1,7 @@
+build/
+out/
+fuzz-findings/
+*.class
+*.jar
+*.log
+.DS_Store

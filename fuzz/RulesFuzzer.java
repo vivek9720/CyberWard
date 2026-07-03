@@ -1,0 +1,1 @@
+import rules.*; public final class RulesFuzzer{public static void fuzzerTestOneInput(byte[] data){java.util.List<IdsRule> r=new RuleParser().parse(data).orNull();new RuleValidator().validate(r);for(IdsRule x:r)new RuleNormalizer().normalize(x);}}

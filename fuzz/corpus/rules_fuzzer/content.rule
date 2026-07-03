@@ -1,0 +1,1 @@
+alert tcp any any -> 192.0.2.10 80 (msg:"http get"; content:"GET"; sid:2; rev:1; classtype:web-application-activity;)

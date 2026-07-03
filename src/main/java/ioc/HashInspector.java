@@ -1,0 +1,1 @@
+package ioc; public final class HashInspector{public String algorithm(String hash){if(hash==null)return"unknown";String h=hash.trim();if(h.matches("(?i)[a-f0-9]{32}"))return"md5";if(h.matches("(?i)[a-f0-9]{40}"))return"sha1";if(h.matches("(?i)[a-f0-9]{64}"))return"sha256";return"unknown";}public boolean strong(String hash){return algorithm(hash).equals("sha256");}}

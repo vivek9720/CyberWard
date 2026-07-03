@@ -1,0 +1,2 @@
+https://example.com/login
+http://malware.test/download.bin

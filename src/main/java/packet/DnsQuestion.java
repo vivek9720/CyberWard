@@ -1,0 +1,1 @@
+package packet; public final class DnsQuestion{private final String name;private final int type;private final int qclass;public DnsQuestion(String name,int type,int qclass){this.name=name;this.type=type;this.qclass=qclass;}public String name(){return name;}public int type(){return type;}public int qclass(){return qclass;}}

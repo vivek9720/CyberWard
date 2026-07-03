@@ -1,0 +1,1 @@
+import ioc.*; public final class IocFuzzer{public static void fuzzerTestOneInput(byte[] data){java.util.List<Ioc> i=new IocParser().parse(data).orNull();IocSet s=new IocSet();s.addAll(i);new IocReport().summarize(i);}}

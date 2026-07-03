@@ -1,0 +1,1 @@
+import policy.*; public final class PolicyFuzzer{public static void fuzzerTestOneInput(byte[] data){PolicyDocument d=new PolicyParser().parse(data).orNull();new PolicyValidator().validate(d);new RuleOrderingAnalyzer().duplicates(d);new RuleOrderingAnalyzer().shadowed(d);}}

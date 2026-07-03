@@ -1,0 +1,2 @@
+alert tcp any any -> any 443 (msg:"tls"; sid:5; rev:1;)
+pass udp any any -> any 53 (msg:"dns pass"; sid:6; rev:1;)

@@ -1,0 +1,1 @@
+package policy; public final class DuplicateFinding{private final int first;private final int second;public DuplicateFinding(int first,int second){this.first=first;this.second=second;}public int first(){return first;}public int second(){return second;}public String toString(){return"rule "+second+" duplicates "+first;}}

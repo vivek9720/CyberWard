@@ -1,0 +1,1 @@
+alert ip any any -> any any (msg:"simple"; sid:1; rev:1;)

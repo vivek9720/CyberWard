@@ -1,0 +1,1 @@
+package ioc; import java.util.EnumMap;import java.util.List;import java.util.Map; public final class IocReport{public String summarize(List<Ioc> iocs){Map<IocType,Integer> counts=new EnumMap<>(IocType.class);if(iocs!=null)for(Ioc i:iocs)counts.merge(i.type(),1,Integer::sum);return"iocs="+(iocs==null?0:iocs.size())+" counts="+counts;}}

@@ -1,0 +1,1 @@
+drop tcp any any -> 10.0.0.5 22 (msg:"ssh block"; sid:3; rev:1;)

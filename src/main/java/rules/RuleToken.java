@@ -1,0 +1,1 @@
+package rules; public final class RuleToken{private final String text;private final int offset;public RuleToken(String text,int offset){this.text=text;this.offset=offset;}public String text(){return text;}public int offset(){return offset;}public String toString(){return text;}}
